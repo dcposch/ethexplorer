@@ -15,14 +15,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello world</h1>
+        <h1>
+          <Image src="/logo.png" alt="" width={48} height={48} />
+          <br />
+          Ethereum Explorer
+        </h1>
 
-        <p>
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
-        </p>
+        <form method="post">
+          <label>Enter an Ethereum address or ENS name.</label>
+          <div>
+            <input type="text" name="addr"></input>
+            <button type="submit">Go</button>
+          </div>
+        </form>
       </main>
 
       <footer>
